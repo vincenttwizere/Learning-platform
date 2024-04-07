@@ -1,0 +1,145 @@
+
+
+  
+  header {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card- {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    
+    
+  }
+  
+  .card h2 {
+    color: darkblue;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .card p {
+    color: black;
+  }
+  
+.about h2{
+    font-size: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-weight: lighter;
+}
+
+.about p{
+    color: darkblue;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.about hr{
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    
+}
+
+#para{
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+  
+/*styles of footer*/
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    
+  
+  }
+  
+  .footer p {
+    margin: 0;
+    color: darkblue;
+    font-size: 17px;  text-align: center;
+  
+  }
+  
+  .footer p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer h2{
+    color: darkblue;
+    padding-left: 55px;
+  }
+  
+  .footer .highlight:hover{
+    color: darkred;
+    font-weight: bold;
+  }  
+
+  /*last styles*/
+
+  .image-content-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 120px;
+    margin: 0 135px;
+  }
+  
+  .image-container {
+    flex: 1 0 300px; /* Take up 1/3 of the available space, with a maximum width of 300px */
+    margin-right: 20px; /* Add spacing between image and content */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    border-radius: 8px;
+    margin-bottom: 160px;
+  }
+  
+  .content-container {
+    flex: 2 0 400px; /* Take up 2/3 of the available space, with a maximum width of 400px */
+  }
+  
+  .content-container h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: darkblue;
+  }
+  
+  .content-container p {
+    font-size: 16px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .image-content-section {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  
+    .image-container,
+    .content-container {
+      flex: auto; /* Take up all available space */
+      margin-right: 0; /* Remove margin between items */
+      margin-bottom: 20px; /* Add spacing between items */
+    }
+  }
+  

@@ -1,0 +1,130 @@
+.contact-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 80px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+.contact-container h2 {
+  text-align: center;
+}
+
+/* Card styles */
+.card-container {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  border-radius: 8px;
+  height: 200px;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  animation: glow 1.5s infinite alternate; 
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  height: 60px;
+  z-index: -1;
+}
+ 
+.icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* styles for frequently asked questions*/
+
+.faq-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 80px;
+  background-color: fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.question {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.answer {
+  margin-bottom: 10px;
+}
+
+.question, .answer {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.answer {
+  display: none; /* Hide answers by default */
+}
+
+.question.clicked {
+  font-weight: bold;
+}
+
+.answer.clicked {
+  display: block; /* Show answers when clicked */
+}
+
+h2{
+  text-align: center;
+}

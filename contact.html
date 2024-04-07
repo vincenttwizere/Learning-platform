@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Bar</title>
+<link rel="stylesheet" href="./css/contact.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.css" rel="stylesheet">
+<link href="css/tooplate-little-fashion.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <strong><span>Edu</span>Craving</strong>
+        </a>
+        <div class="d-lg-none">
+            <a href="sign in.html" class="bi-person custom-icon me-3"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="course.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-none d-lg-block">
+                <a href="sign in.html" class="bi-person custom-icon me-3"></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="card-container">
+    <div class="card">
+        <img src="./images/Phone_2-removebg-preview.png" alt="Phone icon">
+        <i class="fas fa-graduation-cap icon"></i>
+        <h3>Call Us 24/7</h3>
+        <p>+1234-456-789</p>
+    </div>
+    <div class="card">
+        <img src="./images/mail-inbox-black-outline-20629.png" alt="Email icon">
+        <i class="fas fa-book icon"></i>
+        <h3>Write Us</h3>
+        <p>EduCravings@gmail.com</p>
+    </div>
+    <div class="card">
+        <img src="./images/location.png" alt="location icon">
+        <i class="fas fa-laptop-code icon"></i>
+        <h3>Main Office</h3>
+        <p>Kigali, KG12343</p>
+    </div>
+</div>
+
+<div class="contact-container"> <!-- Updated class name here -->
+    <h2>Send Us a Message</h2>
+    <form>
+        <div class="form-group">
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+        </div>
+        <div class="form-group">
+            <label for="message">Comment or Message *</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Send Message</button>
+        </div>
+    </form>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq-container">
+    <div class="faq-card">
+        <div class="question"> What sets EduCravings apart from other learning platforms?</div>
+        <div class="answer"> EduCravings is dedicated to serving underserved communities specifically in rural and war-torn areas of Africa. Our platform is designed to address the unique challenges faced by these communities, such as limited access to quality education resources and connectivity issues. We prioritize inclusivity, accessibility, and resilience in our educational technology solutions.</div>
+        <br>
+        <div class="question"> How does EduCravings plan to bridge the digital divide?</div>
+        <div class="answer"> EduCravings aims to provide equal access to educational resources and tech solutions, ensuring quality education for all students, regardless of their background. Furthermore, it allows students to download and access educational materials on when internet is not strong or not stable.</div>
+        <br>
+        <div class="question"> What support do users of the platform gain after completing their courses?</div>
+        <div class="answer"> EduCravings platform offers support for top performers after courses, connecting them with internships and job placements, promoting professional growth and development beyond their educational journey.</div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer">
+        <div class="row">
+            <div class="col-lg-3 col-10 me-auto mb-4">
+                <h4 class="text-white mb-3"><a href="index.html">Edu</a>Cravings</h4>
+                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Educravings</strong></p>
+                <br>
+                <p class="copyright-text">Designed by <a href="#" target="_blank">Vincent</a></p>
+            </div>
+            <div class="col-lg-5 col-8">
+                <h5 class="text-white mb-3">Quick Access</h5>
+                <ul class="footer-menu d-flex flex-wrap">
+                    <li class="footer-menu-item"><a href="index.html" class="footer-menu-link">Home</a></li>
+                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Courses</a></li>
+                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About US</a></li>
+                    <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-4">
+                <h5 class="text-white mb-3">Social</h5>
+                <ul class="social-icon">
+                    <li><a href="https://www.youtube.com/watch?v=4xI0bJhA0Lc&list=RDEMIQSZE-UNiSnHJNf0vRkdhw&index=27" class="social-icon-link bi-youtube"></a></li>
+                    <li><a href="https://web.whatsapp.com/+250786618907" class="social-icon-link bi-whatsapp"></a></li>
+                    <li><a href="https://www.instagram.com/@twizerimanaVincent" class="social-icon-link bi-instagram"></a></li>
+                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
