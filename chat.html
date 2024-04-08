@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            max-width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        #messages {
+            height: 200px; /* Limit height to create a scrollable area */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #messageForm {
+            display: flex;
+            align-items: center;
+        }
+
+        #messageInput {
+            flex: 1;
+            padding: 8px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #messageInput:focus {
+            outline: none;
+            border-color: dodgerblue;
+        }
+
+        #messageForm button {
+            padding: 8px 15px;
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #messageForm button:hover {
+            background-color: #007bff;
+        }
+
+        .message {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .message.user {
+            background-color: #d0e8f2;
+            text-align: right;
+        }
+
+        .message.teacher {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Messaging System</h2>
+        </div>
+        <div class="card-body">
+            <div id="messages">
+                <!-- Messages will be displayed here -->
+            </div>
+            <form id="messageForm">
+                <input type="text" id="messageInput" placeholder="Type your message">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code to handle sending and receiving messages
+        const messageForm = document.getElementById('messageForm');
+        const messageInput = document.getElementById('messageInput');
+        const messagesDiv = document.getElementById('messages');
+
+        // Event listener for form submission
+        messageForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const message = messageInput.value.trim();
+            if (message !== '') {
+                // Send message to server (you would implement this part)
+                // For simplicity, we'll just display the message here
+                displayMessage(message, 'user'); // Assuming user is sending the message
+                messageInput.value = ''; // Clear input field
+            }
+        });
+
+        // Function to display a message in the UI
+        function displayMessage(message, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.textContent = `${sender}: ${message}`;
+            messageElement.classList.add('message', sender);
+            messagesDiv.appendChild(messageElement);
+            // Automatically scroll to the bottom of messages container
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Example: Load initial messages from server (you would implement this part)
+        // For demonstration, we'll simulate loading messages after a delay
+        setTimeout(function() {
+            const initialMessages = ['Hello!', 'How can I help you?', 'When is the next assignment due?'];
+            initialMessages.forEach(function(message) {
+                displayMessage(message, 'teacher'); // Assuming teacher is sending the message
+            });
+        }, 1000); // Simulate loading after 1 second
+    </script>
+</body>
+</html>
